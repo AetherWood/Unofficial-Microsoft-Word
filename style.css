@@ -1,0 +1,91 @@
+#title2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24;
+    margin-bottom: 0.5%;
+}
+
+#document_name_input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+#document_name_label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+#document_name_div {
+    background-color: slategrey;
+    width: 40%;
+    height: 16%;
+}
+
+#button_savename {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18;
+    background-color: rgb(134, 192, 34);
+}
+
+#p1 {
+    font-size: 14;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.5%;
+}
+
+.button_tools {
+    font-size: 14;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#delete_all_button {
+    background-color: darkred;
+    color: white;
+    border: black;
+    border-width: 3;
+    border-style: solid;
+}
+
+#font_color_input {
+    margin-left: 10%; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14;   
+}
+
+#font_size_input {
+    margin-left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14;
+}
+
+#font_family_input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14;
+}
+
+.button_tools {
+    background-color: cadetblue;
+    border: black;
+    border-style: solid;
+    border-width: 3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14;
+}
+
+.notes {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15;
+}
+
+#enter_spacingL {
+    margin-left: 6.5%;
+}
+
+#write_area {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}

@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title> Microsoft Word </title>
+        <link rel = "stylesheet" href = "style.css">
+        <script src = "main.js"> </script>
+    </head>
+    <body>
+        <h3 id = "title2"> Microsoft Word </h3>
+        <div id = "document_name_div"> 
+            <br>
+            <h4 id = "document_name_label"> Document 1 </h4>
+            <input type = "text" placeholder = "Enter Document Name" id = "document_name_input" width = 30%>
+            <button onclick = "savename()" id = "button_savename"> SAVE DOCUMENT NAME </button>
+        </div>
+        <div id = "settings">
+            <br>
+            <span> <button onclick = "bold()" id = "bold_button"> <b> B </b> </button> </span>
+            <span> <button onclick = "italics()" id = "italics_button"> <i> <b> I </b> </i> </button> </span>
+            <span> <button onclick = "underline()" id = "underline_button"> <u> <b> U </b> </u> </button> </span>
+            <span> <button onclick = "uppercase_word()" id = "uppercase_button"> a ➜ A </button> </span>
+            <span> <button onclick = "lowercase_word()" id = "lowercase_button"> A ➜ a </button> </span>
+            <span> <button ondblclick = "delete_all()" id = "delete_all_button"> Delete All </button> </span>
+            <span> <p id = "p1"> Delete button only works on double click because of unintentional clicks </p> </span>
+        </div>
+        <hr>
+        <span> <input type = "text" placeholder = "Enter Font Family" id = "font_family_input"> </span>
+        <span> <button onclick = "add_font_family()" id = "add_fontfamily" class = "button_tools"> Save font family </button> </span>
+        <span> <input type = "number" placeholder = "Enter font size" id = "font_size_input"> </span>
+        <span> <button onclick = "add_font_size()" id = "add_fontsize" class = "button_tools"> Save font size </button> </span>
+        <span> <input type = "text" placeholder = "Enter font color" id = "font_color_input"> </span>
+        <span> <button onclick = "add_font_color()" id = "add_fontcolor" class = "button_tools"> Save font color </button> </span>
+        <p id = "note1" class = "notes"> <u> <b> Ctrl + Click </b> here to <a href = "https://docs.microsoft.com/en-us/typography/fonts/windows_10_font_list"> see the whole font family list </a> </u> </p>
+        <p id = "note2" class = "notes"> <u> <b> Do not </b> enter a decimal or negative number in font size </u> </p>
+        <p id = "note3" class = "notes"> <u> <b> Only enter basic colors in font color. Do not enter any mixed colors </b> </u> </p>
+        <hr>
+        <input type = "text" placeholder = "Background color" id = "bgcolor_save_text"> 
+        <button onclick = "backgroundcolor_save()" id = "bgcolor_save" class = "button_tools"> Save background color </button>
+        <input type = "number" placeholder = "Enter letter spacing" id = "enter_spacingL">
+        <button onclick = "letterspacing()" id = "letterS" class = "button_tools"> Save letter spacing </button>
+        <p id = "note4" class = "notes"> <u> <b> Only enter basic colors in background color. Do not enter any mixed colors </b> </u> </p>
+        <p id = "note5" class = "notes"> <u> <b> Do not enter a negative number in letter spacing. You can enter decimals. </b> </u> </p>
+        <hr>
+        <button onclick = "replace()" id = "replace_button" class = "button_tools"> Replace word </button>
+        <input type = "text" placeholder = "Word to replace" id = "word1">
+        <input type = "text" placeholder = "Enter output word" id = "word2">
+        <hr>
+        <button onclick = "find()" id = "find_button" class = "button_tools"> Find word </button>
+        <input type = "text" placeholder = "The word" id = "find_text">
+        <br>
+        <br>
+        <input type = "number" placeholder = "Enter Top margin" id = "tm">
+        <input type = "number" placeholder = "Enter Bottom margin" id = "bm">
+        <input type = "number" placeholder = "Enter Left margin" id = "lm">
+        <input type = "number" placeholder = "Enter Right margin" id = "rm">
+        <button onclick = "save_margins()" id = "button_savemargin" class = "button_tools"> Save all margins </button>
+        <hr>
+        <button onclick = "text_tospeech()" id = "textspeech" class = "button_tools"> Text to Speech </button>
+        <button onclick = "voicetype()" id = "voice_type" class = "button_tools"> Voice Type </button>
+        <p id = "note8" class = "notes"> <u> <b> Scroll down to view text area for writing. </b> </u> </p> 
+        <hr>
+        <p id = "note6" class = "notes"> <u> <b> Text to Speech will read out what's written in the text area. It will only stop when it has read all that has been written, or when page is refreshed. Note: This website does not save your data, meaning refreshing this page will result in loss of all your data. </b> </u> </p>
+        <p id = "note7" class = "notes"> <u> <b> Voice type function requires microphone access, please click on accept when asked. </b> </u> </p>
+        </div>
+        <hr>
+        <textarea id = "write_area"></textarea>
+    </body>
+</html>
